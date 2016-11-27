@@ -175,14 +175,6 @@
          style="position: absolute; display: block;position: absolute;background-position: 50% 0%;background-repeat: no-repeat;border-width: 1px; opacity: 0.2;background-image: url(http://collegepoland.org.ua/images/diz1.jpg);capture: on;container: on;height: 900px;width: 100%;z-index: 1;anchor-id: #block-new1;raw-css: box-shadow: inset 0 -54px black;;left: 0;top: 0;; box-shadow: inset 0 -54px black;"
          class="outer-section"></div>
 
-
-
-
-
-
-
-
-
     <div id="fb-root"></div>
     <div id="preview" class="page_container" style="margin: 0 auto; position: relative; ">
 
@@ -830,7 +822,7 @@ line-height: 1;">
              style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 389px;height: 83px;width:
              820px;z-index: 112;anchor-id: #block-new15;raw-css: line-height: 1.3;;left: 70px;; line-height: 1.3;">
             <p style="text-align: center;"><span style="color:#ffffff;"><span style="font-size:17px;"><span
-                                style="font-family:pt sans,sans-serif;">Компания Lux Ticket занимается осуществлением услуг,
+                                style="font-family:pt sans,sans-serif;">Компания Grid-Com занимается осуществлением услуг,
                             предоставляет комплекс решений для Вашего сада, ландшафтного дизайна, садового центра. Наша миссия - делать этот мир красивее.</span></span></span>
             </p>
 
@@ -871,7 +863,7 @@ line-height: 1;">
         <div class="block block-image is-image" id="block-new5">
 
 
-            <img src="./index_files/logo-kopiya.png" alt="" width="172" height="76">
+            <img style="margin-left: 40px;" src="/images/logo2.png" alt="" {{--width="172" height="76"--}}>
 
 
         </div>
@@ -1110,6 +1102,8 @@ line-height: 1;">
                 </table>
             </div>
         </div>
+
+
         <div id="roistat-lh-thank-you" class="roistat-lh-thank-you roistat-lh-hidden">
             Спасибо! Мы свяжемся с вами через некоторое время
         </div>
@@ -1117,9 +1111,12 @@ line-height: 1;">
             Powered by <a href="http://roistat.com/?rs=leadhunter_24141_www.lux-ticket.com"
                           target="_blank">roistat.com</a>
         </div>
+
+
     </div>
 </div>
-<div class="jivo-iframe-container-bottom jivo-state-widget jivo-collapsed jivo_shadow jivo_rounded_corners jivo_gradient"
+
+{{--<div class="jivo-iframe-container-bottom jivo-state-widget jivo-collapsed jivo_shadow jivo_rounded_corners jivo_gradient"
      id="jivo-iframe-container"
      style="visibility: visible; width: 341px; height: 38px; left: 30px; padding-top: 0px; bottom: 0px;">
     <iframe src="javascript:false" title="" name="jivo_container" id="jivo_container" frameborder="no"
@@ -1824,6 +1821,8 @@ line-height: 1;">
         <div id="jivo-drag-handle" style="display: none; height: 70px; cursor: move;"></div>
     </div>
 </div>
-<div id="jivo-mouse-tracker" style="display: none;"></div>
+
+<div id="jivo-mouse-tracker" style="display: none;"></div>--}}
+
 </body>
 </html>
