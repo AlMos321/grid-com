@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'FrontController@index');
+Route::get('/thankyou', 'FrontController@thankyou');
+
+Route::post('/create/order', 'OrderController@createOrder');
+

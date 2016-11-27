@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-class FrontController extends Controller
+
+class AdminController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -11,18 +12,13 @@ class FrontController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
-    }
-    
-    
-    public function index()
-    {
-        return view('index');
+        $this->middleware('admin');
     }
 
-    public function thankyou()
+
+    public function index()
     {
-        return view('thankyou');
+
     }
 
 }

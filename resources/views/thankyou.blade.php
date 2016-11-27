@@ -592,7 +592,7 @@
                 </style>
 
 
-                <div class="step step-0" data-button="" style="display: block">
+                {{--<div class="step step-0" data-button="" style="display: block">
                     <div class="cont " data-name="widget_0" data-first_name="1" data-ordering="0" data-default=""
                          data-label="ИМЯ" data-type="input"><input type="text" class="input" id="order_form_name" name="widget_0" value=""
                                                                    placeholder="ИМЯ"></div>
@@ -604,11 +604,13 @@
                                 type="tel" id="order_form_phone" class="input" name="widget_2" value="" required="" placeholder="ТЕЛЕФОН*">
                     </div>
                 </div>
-                <input id="token" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input id="token" type="hidden" name="_token" value="{{ csrf_token() }}" />--}}
 
             </form>
 
-            <div class="message" style="display: none;"><a class="redirect" href="http://lux-ticket.com/thankyou/"></a>
+
+            <div class="message" style="display: none;"><a class="redirect" href=""></a>
+
             </div>
         </div>
 
@@ -656,11 +658,11 @@
             } </style>
 
 
-        <div class="block block-button is-submit" id="block-new19">
+       {{-- <div class="block block-button is-submit" id="block-new19">
             <a href="/#order_new" onclick="addNewOrder(); return false;" target="" data-label="заказать сетку">заказать сетку</a>
 
 
-        </div>
+        </div>--}}
 
 
         <style id="block-style-new23"> #block-new23 {
@@ -774,16 +776,16 @@
         <div class="block block-text is-text" id="block-new13" style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 221px;height: 214px;width: 960px;z-index: 110;anchor-id: #block-new13;raw-css: text-transform: uppercase;
 line-height: 1;;left: 0;; text-transform: uppercase;
 line-height: 1;">
-            <p style="text-align: center;"><strong><span style="color:#ffffff;"><span style="font-size:72px;"><span
-                                    style="font-family:pt sans narrow,sans-serif;">Cетка для комов<br>
-для вашего сада</span></span></span></strong></p>
+            <p style="text-align: center;"><strong><span style="color:#ffffff;"><span style="font-size:82px;"><span
+                                    style="font-family:pt sans narrow,sans-serif;">СПАСИБО ЗА ЗАЯВКУ!<br>
+<span style="font-size: 40px;">Мы скоро свяжемся с вами</span></span></span></span></strong></p>
 
         </div>
 
 
         <div class="block block-box is-box" id="block-new14"
-             style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;border-color: #cccccc;top: 376px;height: 3px;width: 814px;z-index: 111;anchor-id: #block-new14;border-style: none;background-color: #fff;left: 73px;">
-
+           {{--  style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;border-color: #cccccc;top: 376px;height: 3px;width: 814px;z-index: 111;anchor-id: #block-new14;border-style: none;background-color: #fff;left: 73px;">
+--}}
         </div>
 
 
@@ -828,10 +830,10 @@ line-height: 1;">
         <div class="block block-text is-text" id="block-new15"
              style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 389px;height: 83px;width:
              820px;z-index: 112;anchor-id: #block-new15;raw-css: line-height: 1.3;;left: 70px;; line-height: 1.3;">
-            <p style="text-align: center;"><span style="color:#ffffff;"><span style="font-size:17px;"><span
+           {{-- <p style="text-align: center;"><span style="color:#ffffff;"><span style="font-size:17px;"><span
                                 style="font-family:pt sans,sans-serif;">Компания Grid-Com занимается осуществлением услуг,
                             предоставляет комплекс решений для Вашего сада, ландшафтного дизайна, садового центра. Наша миссия - делать этот мир красивее.</span></span></span>
-            </p>
+            </p>--}}
 
         </div>
 
@@ -842,7 +844,7 @@ line-height: 1;">
                                 style="font-family:pt sans,sans-serif;">Сделано в <a href="http://almoscorp.com"
                                                                                      style="color: #fff;"
                                                                                      target="_blank">AlmosCorp
-                                </a></span></span></span></p>
+                            </a></span></span></span></p>
         </div>
 
 
@@ -870,7 +872,7 @@ line-height: 1;">
         <div class="block block-image is-image" id="block-new5">
 
 
-            <img style="margin-left: 40px;" src="/images/logo2.png" alt="" {{--width="172" height="76"--}}>
+            {{--<img style="margin-left: 40px;" src="/images/logo2.png" alt="" --}}{{--width="172" height="76"--}}{{-->--}}
 
 
         </div>
@@ -1129,9 +1131,9 @@ line-height: 1;">
 <script>
 
     /*$( "#order_form" ).submit(function( event ) {
-        alert( "Handler for .submit() called." );
-        event.preventDefault();
-    });*/
+     alert( "Handler for .submit() called." );
+     event.preventDefault();
+     });*/
 
     token = $('#token').val();
 
@@ -1158,7 +1160,7 @@ line-height: 1;">
                 type: "post",
                 data: {_token: token, name: name, email: email, phone: phone},
                 success: function (data, textStatus) {
-                    window.location = "/thankyou"
+                    window.lcation = "/thankyou"
                 }
             });
 
