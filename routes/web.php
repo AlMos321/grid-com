@@ -16,3 +16,7 @@ Route::get('/thankyou', 'FrontController@thankyou');
 
 Route::post('/create/order', 'OrderController@createOrder');
 
+
+Auth::routes();
+Route::get('/home', 'HomeController@index');
+Route::get('/admin', 'AdminController@index');

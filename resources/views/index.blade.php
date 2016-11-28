@@ -5,24 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <link rel="manifest" href="http://static.lpgenerator.ru/media/pushNotification/manifest.json">
-
-
-
-    <title>Lux Ticket — Лучшие цены на футбольные матчи Европы</title>
+    <title>Grid-Com — Лучшие цены на сетку для комов</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="robots" content="INDEX, FOLLOW">
 
     <meta property="og:image" content="">
-    <meta property="og:title" content="Lux Ticket — Лучшие цены на футбольные матчи Европы">
+    <meta property="og:title" content="Grid-Com — Лучшие цены на сетку для комов">
     <meta property="og:description" content="">
 
     <!--/sprypay.tag.check:377000371e6f1d02b30d474684f23d23/-->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="http://media.lpgenerator.ru/favicons/271906/1458805959.png">
-    <link rel="icon" type="image/x-icon" href="http://media.lpgenerator.ru/favicons/271906/1458805959.png">
+   {{-- <link rel="shortcut icon" type="image/x-icon" href="http://media.lpgenerator.ru/favicons/271906/1458805959.png">
+    <link rel="icon" type="image/x-icon" href="http://media.lpgenerator.ru/favicons/271906/1458805959.png">--}}
 
 
 
@@ -1026,102 +1022,6 @@ line-height: 1;">
 
 <noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=226429751056709&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
 
-
-
-
-<div class="roistat-lh-hidden"></div>
-<div class="roistat-lh-hidden">
-    <div>
-        <div class="roistat-lh-head">
-            <a class="roistat-lh-close" id="roistat-lh-close">×</a>
-            <div class="roistat-lh-head-text" id="roistat-lh-head">
-                <div class="roistat-lh-title roistat-lh-text">У вас есть вопросы? Мы перезвоним вам.</div>
-                <div class="roistat-lh-sub-title roistat-lh-text">Ответим на любые вопросы: цены на билеты на любой из
-                    матчей в интересующей вас зоне, помощь с размещением, трансфер из аэропорта и любые другие вопросы.
-                </div>
-            </div>
-            <span class="roistat-lh-clear"></span>
-        </div>
-        <div class="roistat-lh-form" id="roistat-lh-form">
-            <div>
-                <table class="roistat-lh-table">
-                    <tbody>
-                    <tr class="roistat-lh-mobile">
-                        <td class="roistat-lh-mobile">
-                            <table class="roistat-lh-inner-table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <label for="roistat-lh-name-input"
-                                               class="roistat-lh-text-label roistat-lh-text-label-name">Имя</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="text" id="roistat-lh-name-input"
-                                               class="roistat-lh-name-input roistat-lh-input" autofocus="">
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td class="roistat-lh-mobile">
-                            <table class="roistat-lh-inner-table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <label for="roistat-lh-phone-input"
-                                               class="roistat-lh-text-label roistat-lh-text-label-contact">Телефон</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="text" id="roistat-lh-phone-input"
-                                               class="roistat-lh-phone-input roistat-lh-input" autofocus=""
-                                               onkeypress="window.roistatRenderPhoneMask(this, &#39;&#39;);"
-                                               onkeyup="window.roistatRenderPhoneMask(this, &#39;&#39;);"
-                                               onchange="window.roistatRenderPhoneMask(this, &#39;&#39;);"
-                                               onfocus="window.roistatRenderPhoneMask(this, &#39;&#39;);">
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td class="roistat-lh-mobile roistat-lh-submit-container">
-                            <table class="roistat-lh-inner-table">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <label class="roistat-lh-text roistat-lh-btn-fix">.</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="submit" id="roistat-lh-submit" class="roistat-lh-submit"
-                                               value="Позвоните мне →">
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-
-        <div id="roistat-lh-thank-you" class="roistat-lh-thank-you roistat-lh-hidden">
-            Спасибо! Мы свяжемся с вами через некоторое время
-        </div>
-        <div class="roistat-lh-copyright">
-            Powered by <a href="http://roistat.com/?rs=leadhunter_24141_www.lux-ticket.com"
-                          target="_blank">roistat.com</a>
-        </div>
-
-
-    </div>
-</div>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
