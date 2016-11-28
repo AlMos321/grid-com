@@ -866,7 +866,7 @@ line-height: 1;">
         <div class="block block-image is-image" id="block-new5">
 
 
-            <img style="margin-left: 40px;" src="/images/logo2.png" alt="" {{--width="172" height="76"--}}>
+            <img style="margin-left: 40px;" src="/images/logo4.png" alt="" --width="130" height="117"-->
 
 
         </div>
