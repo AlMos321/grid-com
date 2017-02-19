@@ -28,6 +28,8 @@ class OrderController extends Controller
             'description' => ''
         ]);
 
+        TelegramController::sendMessages('Новый заказ. Телефон - '.$request->phone.'.Имя - '.$request->name.'.Емейл - '.$request->email);
+
         return response()->json(['status' => 'complete']);
     }
 

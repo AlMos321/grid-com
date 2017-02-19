@@ -8,7 +8,13 @@
                     <div class="panel-heading">Admin Panel</div>
 
                     <div class="panel-body">
-                        It's admin page
+                        Каталог товаров
+                        <br>
+                        <a class="btn btn-primary" href="/admin/create/catalog">Создать новый товар</a>
+                        <hr>
+                        @foreach($catalogs as $c)
+                            <p>{{$c->name}} <span><a href="/remove/catalog?id={{$c->id}}">dell</a></span> <span><a href="/update/catalog?id={{$c->id}}">update</a></span></p>
+                         @endforeach
                     </div>
 
                 </div>

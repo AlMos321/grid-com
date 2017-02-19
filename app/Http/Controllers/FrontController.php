@@ -25,4 +25,14 @@ class FrontController extends Controller
         return view('thankyou');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function delivery()
+    {
+        return view('delivery');
+    }
+
 }

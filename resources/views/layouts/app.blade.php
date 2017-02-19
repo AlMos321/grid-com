@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    @yield('css')
 
     <!-- Scripts -->
     <script>
@@ -35,7 +36,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/admin') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -70,6 +71,9 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+                                    <li>
+                                        <a href="/admin/orders">Зказы</a>
+                                    </li>
                                 </ul>
                             </li>
                         @endif
@@ -83,5 +87,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    @yield('js')
 </body>
 </html>

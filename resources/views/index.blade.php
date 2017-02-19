@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<!-- saved from url=(0026)http://www.lux-ticket.com/ -->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
     <title>Grid-Com — Лучшие цены на сетку для комов</title>
+
     <meta name="keywords" content="">
     <meta name="description" content="">
+
+
     <meta name="robots" content="INDEX, FOLLOW">
 
     <meta property="og:image" content="">
     <meta property="og:title" content="Grid-Com — Лучшие цены на сетку для комов">
     <meta property="og:description" content="">
-
-    <!--/sprypay.tag.check:377000371e6f1d02b30d474684f23d23/-->
-
-
-   {{-- <link rel="shortcut icon" type="image/x-icon" href="http://media.lpgenerator.ru/favicons/271906/1458805959.png">
-    <link rel="icon" type="image/x-icon" href="http://media.lpgenerator.ru/favicons/271906/1458805959.png">--}}
-
-
-
     <link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
 
-
     <link rel="stylesheet" type="text/css" href="./index_files/jquery-ui.min.css">
-
 
     <link href="./index_files/screen.css" rel="stylesheet" type="text/css" media="screen,projection">
     <link href="./index_files/print.css" rel="stylesheet" type="text/css" media="print">
 
     <!--[if lt IE 8]>
-    <link href="//static.lpgenerator.ru/media/css/ie.css?v=1477567430" rel="stylesheet" type="text/css"
-          media="screen,projection"/>
+    <link href="//static.lpgenerator.ru/media/css/ie.css?v=1477567430" rel="stylesheet" type="text/css" media="screen,projection"/>
     <![endif]-->
 
     <link rel="stylesheet" href="./index_files/jquery.fancybox.min.css" type="text/css" media="screen">
-
-
-
     <link href="./index_files/public.css" rel="stylesheet" type="text/css" media="screen,projection">
 
-    <style>.page_container {
+    <style>
+        .page_container {
             width: 960px;
             background: 0% 0% no-repeat #000;
             height: 100%;
@@ -604,7 +592,7 @@
 
             </form>
 
-            <div class="message" style="display: none;"><a class="redirect" href="http://lux-ticket.com/thankyou/"></a>
+            <div class="message" style="display: none;"><a class="redirect" href="/thankyou"></a>
             </div>
         </div>
 
@@ -680,11 +668,6 @@
 
 
         <div class="block block-image is-image" id="block-new23">
-
-
-            {{--<img src="./index_files/premier-league.png" alt="" width="225" height="94">--}}
-
-
         </div>
 
 
@@ -709,11 +692,6 @@
 
 
         <div class="block block-image is-image" id="block-new25">
-
-
-            {{--<img src="./index_files/championsleaguelogo.png" alt="" width="192" height="184">--}}
-
-
         </div>
 
 
@@ -738,11 +716,6 @@
 
 
         <div class="block block-image is-image" id="block-new24">
-
-
-            {{--<img src="./index_files/lfp.png" alt="" width="283" height="140">--}}
-
-
         </div>
 
 
@@ -753,7 +726,6 @@
                 background-repeat: no-repeat;
                 border-width: 1px;
                 fix-aspect: on;
-                url: http: / / www . lux-ticket . com / en;
                 top: 15px;
                 height: 15px;
                 width: 20px;
@@ -915,38 +887,29 @@ line-height: 1;">
 
 <div id="mMenu">
     <div class="block block-box is-box" id="block-new2"
-         style="display: block; position: absolute; background-position: 0% 0%; background-repeat: no-repeat; border-width: 1px; border-color: rgb(204, 204, 204); height: 46px; width: 1920px; z-index: 102; border-style: none; background-color: rgb(0, 0, 0); padding: 0px; left: 50%; margin-left: -960px;">
-
+         style="display: block; position: absolute; background-position: 0% 0%; background-repeat: no-repeat;
+         border-width: 1px; border-color: rgb(204, 204, 204); height: 46px; width: 1920px; z-index: 102; border-style: none;
+         background-color: rgb(0, 0, 0); padding: 0px; left: 50%; margin-left: -960px;">
         <div class="block block-image is-image" id="block-new26" style="top: 15px; left: 580px;">
-
             <a href="/en" target="" title="">
-
-
                 <img src="./index_files/gb_nBi5fop.png" alt="" width="20" height="15">
-
-
             </a>
 
         </div>
         <div class="block block-text is-text" id="block-new11"
              style="display: block; position: absolute; background-position: 0% 0%; background-repeat: no-repeat; border-width: 1px; height: 64px; width: 960px; z-index: 108; left: 480px; top: 0px; line-height: 44px; cursor: default;">
             <p style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:17px;"><span
-                                style="font-family:pt sans,sans-serif;"> <span id="tx1"><a
-                                        href="/catalog"
-                                        style="color: #fff; text-decoration: none" target="">Каталог</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
-                                    id="tx2"><a href="/about"
-                                                style="color: #fff; text-decoration: none" target="">О нас</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
-                                    id="tx3"><a href="/delivery"
-                                                style="color: #fff; text-decoration: none" target="">Доставка</a></span></span></span></span></p>
+                                style="font-family:pt sans,sans-serif;"> <span id="tx1">
+                                <a href="/" style="color: #fff; text-decoration: none" target="">Главаня</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span id="tx2">
+                                <a href="/catalog" style="color: #fff; text-decoration: none" target="">Каталог</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span id="tx2">
+                               {{-- <a href="/about" style="color: #fff; text-decoration: none" target="">О нас</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+                                    id="tx3">--}}
+                                <a href="/delivery" style="color: #fff; text-decoration: none" target="">Доставка</a></span></span></span></span></p>
 
         </div>
     </div>
 </div>
 
-
-
-<img id="lpg_tr" src="./index_files/saved_resource" style="display: none;">
-<img id="pzavq29so6zxt6b47s7gsc3di" src="./index_files/saved_resource(1)" style="display: none;">
 
 <div id="fancybox-tmp"></div>
 <div id="fancybox-loading">
@@ -971,80 +934,16 @@ line-height: 1;">
     </div>
 </div>
 
-
-<script type="text/javascript" id="">(function (d, b, a) {
-        (b[a] = b[a] || []).push(function () {
-            try {
-                b.yaCounter36315430 = new Ya.Metrika({
-                    id: 36315430,
-                    clickmap: !0,
-                    trackLinks: !0,
-                    accurateTrackBounce: !0,
-                    webvisor: !0
-                })
-            } catch (a) {
-            }
-        });
-        var e = d.getElementsByTagName("script")[0], c = d.createElement("script");
-        a = function () {
-            e.parentNode.insertBefore(c, e)
-        };
-        c.type = "text/javascript";
-        c.async = !0;
-        c.src = "https://mc.yandex.ru/metrika/watch.js";
-        "[object Opera]" == b.opera ? d.addEventListener("DOMContentLoaded", a, !1) : a()
-    })(document, window, "yandex_metrika_callbacks");</script>
-<noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/36315430" style="position:absolute; left:-9999px;" alt=""&gt;&lt;/div&gt;</noscript>
-
-<script type="text/javascript" id="">var _tmr = window._tmr || (window._tmr = []);
-    _tmr.push({id: "2759286", type: "pageView", start: (new Date).getTime()});
-    (function (b, d, a) {
-        if (!b.getElementById(a)) {
-            var c = b.createElement("script");
-            c.type = "text/javascript";
-            c.async = !0;
-            c.id = a;
-            c.src = ("https:" == b.location.protocol ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
-            a = function () {
-                var a = b.getElementsByTagName("script")[0];
-                a.parentNode.insertBefore(c, a)
-            };
-            "[object Opera]" == d.opera ? b.addEventListener("DOMContentLoaded", a, !1) : a()
-        }
-    })(document, window, "topmailru-code");</script>
-
-<noscript>&lt;div style="position:absolute;left:-10000px;"&gt;
-
-    &lt;img src="//top-fwz1.mail.ru/counter?id=2759286;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail
-    .ru"&gt;
-    &lt;/div&gt;</noscript>
-
-
-<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=226429751056709&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
-
-
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script>
-
-    /*$( "#order_form" ).submit(function( event ) {
-        alert( "Handler for .submit() called." );
-        event.preventDefault();
-    });*/
-
     token = $('#token').val();
-
     function addNewOrder() {
-
         var phone, email, name;
-
         name = $('#order_form_name').val();
         email = $('#order_form_email').val();
         phone = $('#order_form_phone').val().replace(/\s{1,}/g, '');
         phone = phone.replace(/\D{1,}/g, '');
-
-
         if(phone == "" || phone.length < 6){
             alert('Телефон обязательное поле');
             $('#block-new1').css({'opacity':'0.1'});
@@ -1052,7 +951,6 @@ line-height: 1;">
                 $('#block-new1').css({'opacity':'0.2'});
             }, 200);
         } else {
-
             $.ajax({
                 url: '{{url('/create/order')}}',  // указываем URL
                 type: "post",
@@ -1063,9 +961,7 @@ line-height: 1;">
             });
 
         }
-
     }
-
 </script>
 
 </body>
