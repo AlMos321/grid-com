@@ -11,6 +11,40 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontController@index');
+Route::get('/about', 'FrontController@about');
+Route::get('/delivery', 'FrontController@delivery');
+Route::get('/thankyou', 'FrontController@thankyou');
+Route::get('/catalog', 'CatalogController@index');
+Route::get('/catalog', 'CatalogController@index');
+Route::post('/create/order', 'OrderController@createOrder');
+
+
+Auth::routes();
+Route::get('/home', 'HomeController@index');
+
+/**
+ * Admin section 
+ */
+Route::get('/admin', 'AdminController@index');
+Route::get('/admin/create/catalog', 'AdminController@createView');
+Route::post('/post/catalog/create', 'AdminController@createProduct');
+Route::post('/post/catalog/update', 'AdminController@updateProduct');
+Route::get('/remove/catalog', 'AdminController@removeProduct');
+Route::get('/update/catalog', 'AdminController@updateView');
+
+
+
+Route::get('/admin/orders', 'AdminController@indexOrder');
+Route::post('/update/order', 'AdminController@changeOrderValue');
+Route::post('/remove/order', 'AdminController@removeOrder');
+
+/**
+ * Orders Section 
+ */
+
+
+
+/**
+ * End admin section
+ */
