@@ -24,7 +24,8 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <form>
+            <form method="post" action="{{url('/create/posta/order')}}">
+                {{ csrf_field() }}
                 <h3>{{trans('messages.sender')}}</h3>
 
                 <div class="form-group">
@@ -41,7 +42,7 @@
 
                 <div class="form-group">
                     <label for="name_poster">{{trans('messages.name_recipient')}}</label>
-                    <input class="form-control"  name="name_poster">
+                    <input class="form-control"  name="name_recipient">
                 </div>
                 <div class="form-group">
                     <label for="phone_recipient">{{trans('messages.phone_recipient')}}</label>
@@ -59,14 +60,14 @@
                 </div>
                 <div class="form-group">
                     <label for="city-recipient">{{trans('messages.city-recipient')}}</label>
-                    <select id="city-recipient" class="form-control" name="city-recipient">
+                    <select id="city-recipient" class="form-control" name="city_recipient">
                         <option>Киев</option>
                         <option>Черкассы</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="">{{trans('messages.type-of-services')}}</label>
-                    <select id="city-recipient" class="form-control" name="type-of-services">
+                    <select id="city-recipient" class="form-control" name="type_of_services">
                         <option>Отделение-Отделение</option>
                         <option>Адрес-Адрес</option>
                         <option>Адрес-Отделение</option>
@@ -75,14 +76,14 @@
                 </div>
                 <div class="form-group">
                     <label for="">{{trans('messages.product-type')}}</label>
-                    <select id="product-type" class="form-control" name="product-type">
+                    <select id="product-type" class="form-control" name="product_type">
                         <option>Тип1</option>
                         <option>Тип2</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="">{{trans('messages.product-count')}}</label>
-                    <input id="product-count" class="form-control" name="product-count">
+                    <input id="product-count" class="form-control" name="product_count">
                 </div>
                 <button type="submit" class="btn btn-default">{{trans('messages.submit')}}</button>
             </form>
