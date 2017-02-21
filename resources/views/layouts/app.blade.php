@@ -74,6 +74,9 @@
                                     <li>
                                         <a href="/admin/orders">Зказы</a>
                                     </li>
+                                    <li>
+                                        <a href="/admin/seo">Seo</a>
+                                    </li>
                                 </ul>
                             </li>
                         @endif
