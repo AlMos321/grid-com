@@ -15,6 +15,7 @@ Route::get('/', 'FrontController@index');
 Route::get('/about', 'FrontController@about');
 Route::get('/delivery', 'FrontController@delivery');
 Route::get('/thankyou', 'FrontController@thankyou');
+Route::get('/posta', 'FrontController@posta');
 Route::get('/catalog', 'CatalogController@index');
 Route::get('/catalog', 'CatalogController@index');
 Route::post('/create/order', 'OrderController@createOrder');
@@ -48,3 +49,4 @@ Route::post('/remove/order', 'AdminController@removeOrder');
 /**
  * End admin section
  */
+
