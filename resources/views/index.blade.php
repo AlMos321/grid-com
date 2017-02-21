@@ -15,6 +15,9 @@
     <meta property="og:image" content="">
     <meta property="og:title" content="Grid-Com — Лучшие цены на сетку для комов">
     <meta property="og:description" content="">
+
+
+
     <link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="./index_files/jquery-ui.min.css">
@@ -28,6 +31,13 @@
 
     <link rel="stylesheet" href="./index_files/jquery.fancybox.min.css" type="text/css" media="screen">
     <link href="./index_files/public.css" rel="stylesheet" type="text/css" media="screen,projection">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <style>
         .page_container {
@@ -156,7 +166,7 @@
 
 
     <div id="block-new1"
-         style="position: absolute; display: block;position: absolute;background-position: 50% 0%;background-repeat: no-repeat;border-width: 1px; opacity: 0.2;background-image: url(http://collegepoland.org.ua/images/diz1.jpg);capture: on;container: on;height: 900px;width: 100%;z-index: 1;anchor-id: #block-new1;raw-css: box-shadow: inset 0 -54px black;;left: 0;top: 0;; box-shadow: inset 0 -54px black;"
+         style="position: absolute; display: block;position: absolute;background-position: 50% 0%;background-repeat: no-repeat;border-width: 1px; opacity: 0.5;background-image: url(http://collegepoland.org.ua/images/diz1.jpg);capture: on;container: on;height: 900px;width: 100%;z-index: 1;anchor-id: #block-new1;raw-css: box-shadow: inset 0 -54px black;;left: 0;top: 0;; box-shadow: inset 0 -54px black;"
          class="outer-section"></div>
 
     <div id="fb-root"></div>
@@ -166,6 +176,7 @@
 
         <div class="block block-form is-form" id="block-new18"
              style="display: block;position: absolute;width: 762px;top: 725px;height: auto;left: 0;background-color: transparent;background-image: none;background-position: 0% 0%;background-repeat: no-repeat;opacity: NaN;">
+
 
             <form action="{{url('/create/order')}}" method="post" id="order_form" {{--enctype="multipart/form-data" --}}class="our_form">
 
@@ -592,6 +603,8 @@
 
             </form>
 
+
+
             <div class="message" style="display: none;"><a class="redirect" href="/thankyou"></a>
             </div>
         </div>
@@ -641,7 +654,7 @@
 
 
         <div class="block block-button is-submit" id="block-new19">
-            <a href="/#order_new" onclick="addNewOrder(); return false;" target="" data-label="заказать сетку">заказать сетку</a>
+            <a href="/#order_new" onclick="addNewOrder(); return false;" target="" data-label="заказать сетку">заказать звонок</a>
 
 
         </div>
@@ -712,11 +725,54 @@
 
             #block-new24 > img {
                 vertical-align: top;
-            }</style>
+            }
+
+            .btn-custome {
+                width: 100%;
+                font-size: 25px;
+                text-decoration: none;
+            }
+
+            .consult {
+                font-size: 10px;
+                color: white;
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .modal-backdrop.fade.in {
+               z-index: -1;
+            }
+
+
+        </style>
 
 
         <div class="block block-image is-image" id="block-new24">
+            <a class="btn btn-success btn-custome" data-toggle="modal" data-target=".modal">Сделать заказ</a>
+            <p class="consult">Если Вы не уверены - получите бесплатную консультацию.</p>
         </div>
+
+
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" style="padding-top: 20px;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="https://novaposhta.ua/runtime/cache/320x95/nova%E2%80%93poshta-15-long_320px.png" alt="">
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="/posta" style="height: 600px;width: 570px;"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{{trans('messages.close')}}</button>
+                        {{--<button type="button" class="btn btn-primary">{{trans('messages.order')}}</button>--}}
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
 
 
         <style id="block-style-new26"> #block-new26 {
@@ -787,7 +843,7 @@ line-height: 1;">
 
         <div class="block block-text is-text" id="block-new16"
              style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 846px;height: 44px;width: 540px;z-index: 113;anchor-id: #block-new16;raw-css: line-height: 52px;;left: 0;; line-height: 52px;">
-            <p><span style="color:#FFFFFF;"><span style="font-size:19px;"><span style="font-family:pt sans,sans-serif;">grid-com.com created by AlmosCorp</span></span></span>
+            <p><span style="color:#FFFFFF;"><span style="font-size:19px;"><span style="font-family:pt sans,sans-serif;">grid-com created by AlmosCorp</span></span></span>
             </p>
 
         </div>
@@ -807,9 +863,9 @@ line-height: 1;">
         <div class="block block-text is-text" id="block-new17"
              style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 846px;height: 41px;width: 300px;z-index: 114;anchor-id: #block-new17;raw-css: line-height: 52px;;left: 660px;; line-height: 52px;">
             <p style="text-align: right;"><span style="color:#FFFFFF;"><span style="font-size:19px;"><span
-                                style="font-family:pt sans,sans-serif;">Сделано в <a href="http://almoscorp.com"
+                                style="font-family:pt sans,sans-serif;">Сделано в <a href="#"
                                                                                      style="color: #fff;"
-                                                                                     target="_blank">AlmosCorp
+                                                                                     target="_blank">AlmosCorp сетка для комов. СНГ
                                 </a></span></span></span></p>
         </div>
 
@@ -935,7 +991,8 @@ line-height: 1;">
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
     token = $('#token').val();
     function addNewOrder() {

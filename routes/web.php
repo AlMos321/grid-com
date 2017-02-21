@@ -15,11 +15,15 @@ Route::get('/', 'FrontController@index');
 Route::get('/about', 'FrontController@about');
 Route::get('/delivery', 'FrontController@delivery');
 Route::get('/thankyou', 'FrontController@thankyou');
+
 Route::get('/nowa-poshta', 'FrontController@novaPoshta');
 
+
+Route::get('/posta', 'FrontController@posta');
 Route::get('/catalog', 'CatalogController@index');
 Route::get('/catalog', 'CatalogController@index');
 Route::post('/create/order', 'OrderController@createOrder');
+Route::post('/create/posta/order', 'OrderController@createPoshtaOrder');
 
 
 Auth::routes();

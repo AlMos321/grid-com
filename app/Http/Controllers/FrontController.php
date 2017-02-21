@@ -68,4 +68,8 @@ class FrontController extends Controller
         return $seoData;
     }
 
+    public function posta(){
+        return view('posta');
+    }
+
 }
