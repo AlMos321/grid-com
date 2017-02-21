@@ -35,4 +35,8 @@ class FrontController extends Controller
         return view('delivery');
     }
 
+    public function posta(){
+        return view('posta');
+    }
+
 }
