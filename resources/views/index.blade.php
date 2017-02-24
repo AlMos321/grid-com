@@ -17,7 +17,6 @@
     <meta property="og:description" content="">
 
 
-
     <link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="./index_files/jquery-ui.min.css">
@@ -32,12 +31,12 @@
     <link rel="stylesheet" href="./index_files/jquery.fancybox.min.css" type="text/css" media="screen">
     <link href="./index_files/public.css" rel="stylesheet" type="text/css" media="screen,projection">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">--}}
 
     <style>
         .page_container {
@@ -54,7 +53,7 @@
             migrated: 1;
             background-no-scroll: on;
             bg-color: 000;
-            height: 900px;
+            height: 1000px;
             width: 960;
             z-index: 101;
             background-color: #000;
@@ -72,8 +71,12 @@
 
 
     <style>
-        .preview-main-container, .main-container {
+        /*.preview-main-container, .main-container {
             height: 900px !important;
+        }*/
+
+        .container .preview-main-container {
+            height: 1000px;
         }
 
         * {
@@ -126,6 +129,13 @@
             z-index: 1000;
         }</style>
     <link rel="stylesheet" href="./index_files/module.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 </head>
 <body style="" class="body-editor">
 
@@ -156,9 +166,6 @@
 </div>
 
 
-
-
-
 <div class="container preview-main-container" style="">
 
 
@@ -166,12 +173,20 @@
 
 
     <div id="block-new1"
-         style="position: absolute; display: block;position: absolute;background-position: 50% 0%;background-repeat: no-repeat;border-width: 1px; opacity: 0.5;background-image: url(http://collegepoland.org.ua/images/diz1.jpg);capture: on;container: on;height: 900px;width: 100%;z-index: 1;anchor-id: #block-new1;raw-css: box-shadow: inset 0 -54px black;;left: 0;top: 0;; box-shadow: inset 0 -54px black;"
+         style="
+         position: absolute;
+          display: block;position: absolute;
+          background-position: 50% 0%;
+          background-repeat: no-repeat;
+          border-width: 1px; opacity: 0.5;
+          background-image: url(http://collegepoland.org.ua/images/diz1.jpg);
+          capture: on;container: on;height: 900px;
+          width: 100%;z-index: 1;anchor-id: #block-new1;
+          raw-css: box-shadow: inset 0 -54px black;;left: 0;top: 0;background-size: cover; box-shadow: inset 0 -54px black;"
          class="outer-section"></div>
 
     <div id="fb-root"></div>
     <div id="preview" class="page_container" style="margin: 0 auto; position: relative; ">
-
 
 
         <div class="block block-form is-form" id="block-new18"
@@ -599,10 +614,9 @@
                                 type="tel" id="order_form_phone" class="input" name="widget_2" value="" required="" placeholder="ТЕЛЕФОН*">
                     </div>
                 </div>
-                <input id="token" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input id="token" type="hidden" name="_token" value="{{ csrf_token() }}"/>
 
             </form>
-
 
 
             <div class="message" style="display: none;"><a class="redirect" href="/thankyou"></a>
@@ -741,7 +755,7 @@
             }
 
             .modal-backdrop.fade.in {
-               z-index: -1;
+                z-index: -1;
             }
 
 
@@ -752,7 +766,6 @@
             <a class="btn btn-success btn-custome" data-toggle="modal" data-target=".modal">Сделать заказ</a>
             <p class="consult">Если Вы не уверены - получите бесплатную консультацию.</p>
         </div>
-
 
 
         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" style="padding-top: 20px;">
@@ -772,7 +785,6 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
 
 
         <style id="block-style-new26"> #block-new26 {
@@ -795,11 +807,13 @@
             }</style>
 
 
-        <div class="block block-text is-text" id="block-new13" style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 221px;height: 214px;width: 960px;z-index: 110;anchor-id: #block-new13;raw-css: text-transform: uppercase;
+        <div class="block block-text is-text" id="block-new13" style="display: block;position: absolute;
+        background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;
+        top: 221px;height: 214px;width: 960px;z-index: 110;anchor-id: #block-new13;raw-css: text-transform: uppercase;
 line-height: 1;;left: 0;; text-transform: uppercase;
 line-height: 1;">
             <p style="text-align: center;"><strong><span style="color:#ffffff;"><span style="font-size:72px;"><span
-                                    style="font-family:pt sans narrow,sans-serif;">Cетка для комов<br>
+                                    style="font-family:pt sans narrow,sans-serif;">Cетка для комов<br>
 для вашего сада</span></span></span></strong></p>
 
         </div>
@@ -842,8 +856,11 @@ line-height: 1;">
 
 
         <div class="block block-text is-text" id="block-new16"
-             style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 846px;height: 44px;width: 540px;z-index: 113;anchor-id: #block-new16;raw-css: line-height: 52px;;left: 0;; line-height: 52px;">
-            <p><span style="color:#FFFFFF;"><span style="font-size:19px;"><span style="font-family:pt sans,sans-serif;">grid-com created by AlmosCorp</span></span></span>
+             style="display: block;position: absolute;background-position: 0% 0%;
+             background-repeat: no-repeat;border-width: 1px;fix-position: on;
+             top: 900px;height: 44px;width: 540px;z-index: 113;anchor-id: #block-new16;raw-css: line-height: 52px;;left: 0;; line-height: 52px;">
+            <p><span style="color:#FFFFFF;"><span style="font-size:19px;"><span
+                                style="font-family:pt sans,sans-serif;">grid-com created by AlmosCorp</span></span></span>
             </p>
 
         </div>
@@ -861,11 +878,18 @@ line-height: 1;">
 
 
         <div class="block block-text is-text" id="block-new17"
-             style="display: block;position: absolute;background-position: 0% 0%;background-repeat: no-repeat;border-width: 1px;fix-position: on;top: 846px;height: 41px;width: 300px;z-index: 114;anchor-id: #block-new17;raw-css: line-height: 52px;;left: 660px;; line-height: 52px;">
+             style="
+             display: block;position: absolute;
+             background-position: 0% 0%;
+             background-repeat: no-repeat;
+             border-width: 1px;fix-position: on;
+             top: 900px;height: 41px;width: 300px;
+             z-index: 114;anchor-id: #block-new17;
+             raw-css: line-height: 52px;;left: 660px;; line-height: 52px;">
             <p style="text-align: right;"><span style="color:#FFFFFF;"><span style="font-size:19px;"><span
                                 style="font-family:pt sans,sans-serif;">Сделано в <a href="#"
                                                                                      style="color: #fff;"
-                                                                                     target="_blank">AlmosCorp сетка для комов. СНГ
+                                                                                     target="_blank">AlmosCorp
                                 </a></span></span></span></p>
         </div>
 
@@ -894,7 +918,7 @@ line-height: 1;">
         <div class="block block-image is-image" id="block-new5">
 
 
-            <img style="margin-left: 40px;" src="/images/logo4.png" alt="" --width="130" height="117"-->
+            <img style="margin-left: 40px;" src="/images/logo4.png" alt="" --width="130" height="117" -->
 
 
         </div>
@@ -921,7 +945,7 @@ line-height: 1;">
                 migrated: 1;
                 background-no-scroll: on;
                 bg-color: 000;
-                height: 900px;
+                height: 1000px;
                 width: 960;
                 z-index: 101;
                 bg-repeat: no-repeat;
@@ -930,9 +954,11 @@ line-height: 1;">
                 background-color: #000;
             }
 
-            .preview-main-container {
+            /*.preview-main-container {
                 min-width: 960px !important;
-            }</style>
+            }*/
+
+        </style>
 
 
     </div>
@@ -956,8 +982,10 @@ line-height: 1;">
              style="display: block; position: absolute; background-position: 0% 0%; background-repeat: no-repeat; border-width: 1px; height: 64px; width: 960px; z-index: 108; left: 480px; top: 0px; line-height: 44px; cursor: default;">
             <p style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:17px;"><span
                                 style="font-family:pt sans,sans-serif;"> <span id="tx1">
-                                <a href="/" style="color: #fff; text-decoration: none" target="">Главаня</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span id="tx2">
-                                <a href="/catalog" style="color: #fff; text-decoration: none" target="">Каталог</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span id="tx2">
+                                <a href="/" style="color: #fff; text-decoration: none" target="">Главаня</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+                                    id="tx2">
+                                <a href="/catalog" style="color: #fff; text-decoration: none" target="">Каталог</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+                                    id="tx2">
                                {{-- <a href="/about" style="color: #fff; text-decoration: none" target="">О нас</a></span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
                                     id="tx3">--}}
                                 <a href="/delivery" style="color: #fff; text-decoration: none" target="">Доставка</a></span></span></span></span></p>
@@ -992,7 +1020,8 @@ line-height: 1;">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
     token = $('#token').val();
     function addNewOrder() {
@@ -1001,11 +1030,11 @@ line-height: 1;">
         email = $('#order_form_email').val();
         phone = $('#order_form_phone').val().replace(/\s{1,}/g, '');
         phone = phone.replace(/\D{1,}/g, '');
-        if(phone == "" || phone.length < 6){
+        if (phone == "" || phone.length < 6) {
             alert('Телефон обязательное поле');
-            $('#block-new1').css({'opacity':'0.1'});
-            setTimeout(function(){
-                $('#block-new1').css({'opacity':'0.2'});
+            $('#block-new1').css({'opacity': '0.1'});
+            setTimeout(function () {
+                $('#block-new1').css({'opacity': '0.2'});
             }, 200);
         } else {
             $.ajax({
@@ -1016,7 +1045,6 @@ line-height: 1;">
                     window.location = "/thankyou"
                 }
             });
-
         }
     }
 </script>

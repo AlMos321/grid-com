@@ -75,3 +75,4 @@ Route::get('/telegram/get/updates', 'TelegramController@getUpdates');
  */
 
 Route::get('/get/cities', 'PoshtaController@getCities');
+Route::get('/save/cities', 'PoshtaController@saveLocationsFromApi');

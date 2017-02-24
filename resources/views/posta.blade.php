@@ -19,6 +19,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+<?php
+    $location = \App\ApiLocation::all();
+?>
+
 <body>
 <div class="container-fluid">
     <div class="row">
@@ -54,15 +59,17 @@
                 <div class="form-group">
                     <label for="city_poster">{{trans('messages.city_poster')}}</label>
                     <select id="city_poster" class="form-control" name="city_poster">
-                        <option>Киев</option>
-                        <option>Черкассы</option>
+                        @foreach($location as $loc)
+                            <option>{{$loc->description_ru}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="city-recipient">{{trans('messages.city-recipient')}}</label>
                     <select id="city-recipient" class="form-control" name="city_recipient">
-                        <option>Киев</option>
-                        <option>Черкассы</option>
+                        @foreach($location as $loc)
+                            <option>{{$loc->description_ru}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group">
