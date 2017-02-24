@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Catalog;
 use App\Order;
+use App\Seo;
 use \Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -92,6 +93,39 @@ class AdminController extends Controller
     
     /**
      * End order section
+     */
+    
+    /**
+     * Seo section
+     */
+    
+    public function indexSeo(){
+        $seos = Seo::all();
+        return view('admin.seo', ['seos' => $seos]);
+    }
+    
+    public function createSeo(){
+        Seo::create([
+            'name' => 'name',
+            'slug' => 'slug',
+            'description' => 'description',
+            'keywords' => 'keywords',
+            'title' => 'title',
+        ]);
+        return redirect()->back();
+    }
+
+    public function updateSeo(Request $request){
+        $item = Seo::find($request->id);
+        if(isset($item) && isset($item[$request->column])){
+            $item[$request->column] = $request->value;
+            $item->save();
+        }
+        return response()->json(['status' => 'complete']);
+    }
+    
+    /**
+     * End seo section
      */
 
 }

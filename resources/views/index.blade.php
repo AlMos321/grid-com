@@ -4,10 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <title>Grid-Com — Лучшие цены на сетку для комов</title>
+    <title>{{$seoData['title']}}</title>
 
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="{{$seoData['keywords']}}">
+    <meta name="description" content="{{$seoData['description']}}">
 
 
     <meta name="robots" content="INDEX, FOLLOW">
