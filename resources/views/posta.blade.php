@@ -81,17 +81,31 @@
                         <option>Отделение-Адрес</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="">{{trans('messages.product-type')}}</label>
-                    <select id="product-type" class="form-control" name="product_type">
-                        <option>Тип1</option>
-                        <option>Тип2</option>
-                    </select>
+
+                <button class="btn btn-primary" onclick="addVariant(); return false;">Добавить</button>
+
+                <div class="container variant-first">
+                    <div class="row">
+
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label for="">{{trans('messages.product-type')}}</label>
+                                <select id="product-type" class="form-control" name="product_type">
+                                    <option>Тип1</option>
+                                    <option>Тип2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label for="">{{trans('messages.product-count')}}</label>
+                                <input id="product-count" class="form-control" name="product_count">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">{{trans('messages.product-count')}}</label>
-                    <input id="product-count" class="form-control" name="product_count">
-                </div>
+
                 <button type="submit" class="btn btn-default">{{trans('messages.submit')}}</button>
             </form>
         </div>
@@ -103,5 +117,46 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+    /**
+     * add variant to form
+     */
+    function addVariant(){
+        $(".variant-first").after('' +
+                '<div class="container">' +
+                '<div class="row">'+
+                '<div class="col-xs-6">'+
+                '<div class="form-group">'+
+                '<label for="">{{trans('messages.product-type')}}</label>'+
+                '<select id="product-type" class="form-control" name="product_type">'+
+                '<option>Тип1</option>'+
+                '<option>Тип2</option>'+
+                '</select>'+
+                '</div>'+
+                '</div>'+
+                '<div class="col-xs-4">'+
+                '<div class="form-group">'+
+                '<label for="">{{trans('messages.product-count')}}</label>'+
+                '<input id="product-count" class="form-control" name="product_count">'+
+                '</div>'+
+                '</div>'+
+                '<div class="col-xs-2" style="padding-top: 28px;">'+
+                '<button class="glyphicon glyphicon-remove" onclick="removeVariant(this); return false;"></button>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '');
+    }
+
+    /**
+     * remove variant from form
+     * @param element
+     */
+    function removeVariant(element) {
+        $(element).parents( ".container" ).remove();
+    }
+</script>
+
 </body>
 </html>
