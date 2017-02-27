@@ -46,6 +46,7 @@ class AdminController extends Controller
             'description' => $request->description,
             'price' => $request->price,
             'images' => $request->images,
+            'count' => $request->count,
         ]);
         return redirect('/admin');
     }
@@ -64,6 +65,7 @@ class AdminController extends Controller
         $catalog->description = $request->description;
         $catalog->price = $request->price;
         $catalog->images = $request->images;
+        $catalog->count = $request->count;
         $catalog->save();
         return redirect()->back();
     }

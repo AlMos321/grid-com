@@ -14,7 +14,7 @@ class Catalog extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'description', 'images', 'price', 
+        'name', 'description', 'images', 'price', 'count'
     ];
     
 }

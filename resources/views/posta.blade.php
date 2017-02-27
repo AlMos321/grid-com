@@ -22,6 +22,7 @@
 
 <?php
     $location = \App\ApiLocation::all();
+    $catalogs = \App\Catalog::all();
 ?>
 
 <body>
@@ -43,7 +44,7 @@
                 </div>
 
                 <hr>
-                <h3>{{trans('messages.recipient')}}</h3>
+                <h3>{{trans('messages.recipient')}}</h3> <button class="btn btn-sm" onclick="someRecipient(); return false;">Как и зказчик</button>
 
                 <div class="form-group">
                     <label for="name_poster">{{trans('messages.name_recipient')}}</label>
@@ -90,9 +91,10 @@
                         <div class="col-xs-6">
                             <div class="form-group">
                                 <label for="">{{trans('messages.product-type')}}</label>
-                                <select id="product-type" class="form-control" name="product_type">
-                                    <option>Тип1</option>
-                                    <option>Тип2</option>
+                                <select id="product-type" class="form-control" name="product_type[]">
+                                    @foreach($catalogs as $cat)
+                                        <option>{{$cat->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
@@ -100,7 +102,7 @@
                         <div class="col-xs-4">
                             <div class="form-group">
                                 <label for="">{{trans('messages.product-count')}}</label>
-                                <input id="product-count" class="form-control" name="product_count">
+                                <input id="product-count" class="form-control" name="product_count[]">
                             </div>
                         </div>
                     </div>
@@ -115,8 +117,6 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 
 <script>
     /**
@@ -129,16 +129,17 @@
                 '<div class="col-xs-6">'+
                 '<div class="form-group">'+
                 '<label for="">{{trans('messages.product-type')}}</label>'+
-                '<select id="product-type" class="form-control" name="product_type">'+
-                '<option>Тип1</option>'+
-                '<option>Тип2</option>'+
+                '<select id="product-type" class="form-control" name="product_type[]">'+
+                @foreach($catalogs as $cat)
+                    '<option>{{$cat->name}}</option>'+
+                @endforeach
                 '</select>'+
                 '</div>'+
                 '</div>'+
                 '<div class="col-xs-4">'+
                 '<div class="form-group">'+
                 '<label for="">{{trans('messages.product-count')}}</label>'+
-                '<input id="product-count" class="form-control" name="product_count">'+
+                '<input id="product-count" class="form-control" name="product_count[]">'+
                 '</div>'+
                 '</div>'+
                 '<div class="col-xs-2" style="padding-top: 28px;">'+
@@ -155,6 +156,14 @@
      */
     function removeVariant(element) {
         $(element).parents( ".container" ).remove();
+    }
+
+    /**
+     * set recipient value
+     */
+    function someRecipient(){
+        $('input[name=name_recipient]').val($('input[name=name_poster]').val());
+        $('input[name=phone_recipient]').val($('input[name=phone_poster]').val());
     }
 </script>
 

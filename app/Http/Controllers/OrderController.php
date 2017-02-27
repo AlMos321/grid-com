@@ -45,6 +45,13 @@ class OrderController extends Controller
      */
     public function createPoshtaOrder(Request $request){
 
+        $orderCatalog = [];
+        $allCount = 0;
+        foreach ($request->product_type as $key => $item){
+            $orderCatalog[$request->product_count[$key]] = $item;
+            $allCount += $request->product_count[$key];
+        }
+        $orderCatalogJson = \GuzzleHttp\json_encode($orderCatalog);
         PostaOrder::create([
            'city_poster' => $request->city_poster,
            'type-of-services' => $request->type_of_services,
@@ -55,8 +62,8 @@ class OrderController extends Controller
            'name_poster' => $request->name_poster,
            'sender' => "",
            'recipient' => "",
-           'product-type' => $request->product_type,
-           'product-count' => $request->product_count,
+           'product-type' => $orderCatalogJson,
+           'product-count' => $allCount,
            'email_poster' => $request->email_poster,
            'email_recipient' => $request->email_recipient,
         ]);

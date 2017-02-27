@@ -14,6 +14,7 @@ class CreateCatalogTable extends Migration
             $table->text('description');
             $table->string('images');
             $table->string('price');
+            $table->integer('count');
             $table->timestamps();
         });
     }

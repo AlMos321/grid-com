@@ -29,7 +29,12 @@
                                 <label>Ссылка на картинку</label>
                                 <input type="text" class="form-control" name="images">
                             </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+
+                            <div class="form-group">
+                                <label>Количество на складе</label>
+                                <input required type="text" class="form-control" name="count">
+                            </div>
+                            <button type="submit" class="btn btn-default">Сохранить</button>
                         </form>
                     </div>
                 </div>

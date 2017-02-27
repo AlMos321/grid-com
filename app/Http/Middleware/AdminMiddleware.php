@@ -19,7 +19,11 @@ class AdminMiddleware
         if (Auth::check()  == 1 && Auth::user()->is_admin){
             return $next($request);
         } else {
-            return redirect()->guest('login');
+            if(Auth::check()  == 1){
+                return redirect()->guest('/');
+            } else {
+                return redirect()->guest('login');
+            }
         }
     }
 }
