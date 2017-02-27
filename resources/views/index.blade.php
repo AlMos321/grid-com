@@ -16,11 +16,8 @@
     <meta property="og:title" content="Grid-Com — Лучшие цены на сетку для комов">
     <meta property="og:description" content="">
 
-
     <link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="./index_files/jquery-ui.min.css">
-
     <link href="./index_files/screen.css" rel="stylesheet" type="text/css" media="screen,projection">
     <link href="./index_files/print.css" rel="stylesheet" type="text/css" media="print">
 
@@ -31,12 +28,6 @@
     <link rel="stylesheet" href="./index_files/jquery.fancybox.min.css" type="text/css" media="screen">
     <link href="./index_files/public.css" rel="stylesheet" type="text/css" media="screen,projection">
 
-
-    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">--}}
 
     <style>
         .page_container {
@@ -66,9 +57,7 @@
             min-width: 960px !important;
         }</style>
 
-
     <link rel="stylesheet" href="./index_files/css" type="text/css" media="screen">
-
 
     <style>
         /*.preview-main-container, .main-container {
@@ -135,6 +124,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    @include('layouts.yandex_metrica')
 
 </head>
 <body style="" class="body-editor">
